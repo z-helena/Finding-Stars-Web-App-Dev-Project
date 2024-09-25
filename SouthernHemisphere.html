@@ -1,13 +1,109 @@
-<h>The Southern Sky has many Stars</h>
+<!DOCTYPE html>
 
-<p></p>
-<img src="https://www.jlbphotos.com/wp-content/uploads/2016/10/JLB-photos-Gallery-1010.jpg" alt="Stars over Uluru in Australia">
-<p>
-</p>
+<head>
+    <style>
+        .text {
+            color: rgb(255, 254, 213);
 
-<h1>Alpha Centauri is the closest star to us! It is around 4 light years away</h1>
-<p></p>
-<p>To find it try to find the constelation Centaurus. On the front leg of the "centaur" at the end there is a bright stat, that is alpha Centauri</p>
+        }
 
-<img src="https://www.constellation-guide.com/wp-content/uploads/2014/07/Alpha-Centauri-location.png" alt="Stars over Uluru in Australia">
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                
+            }
 
+            25% {
+                background-color: rgb(249, 11, 213);
+                left: 200px;
+                top: 0px;
+                
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+                
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+                
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        body {
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-delay: -2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes images {
+            0% {
+                rotate: 0deg;
+            }
+            25% {
+                rotate: 90deg;
+            }
+            50% {
+                rotate: 180deg;
+            }
+            75% {
+                rotate: 270deg;
+            }
+            100% {
+                rotate: 0deg;
+            }
+        }
+
+        img {
+            width: 500px;
+            animation-name: images;
+            animation-duration: 8s;
+            animation-delay: -2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<html>
+
+<body style="background-color:#252525;">
+
+    <h1 class="text">Alpha Centauri is the closest star to us! It is around 4 light years away</h1>
+    <p></p>
+    <p class="text">To find it try to find the constelation Centaurus. On the front leg of the "centaur" at the end
+        there is a bright
+        stat, that is alpha Centauri</p>
+
+    <img class=image src="https://www.constellation-guide.com/wp-content/uploads/2014/07/Alpha-Centauri-location.png"
+        alt="Location of the star alpha centauri">
+
+    <p></p>
+    <h class="text">Alpha Centuari is in the Southern Hemisphere. The Southern Sky has many Stars</h>
+
+    <p></p>
+    <img class="image" src="https://www.jlbphotos.com/wp-content/uploads/2016/10/JLB-photos-Gallery-1010.jpg"
+        alt="Stars over Uluru in Australia">
+    <p>
+    </p>
+
+    <div></div>
+
+
+</body>
+
+</html>
