@@ -78,270 +78,354 @@
             animation-iteration-count: infinite;
             width: 300px;
             border: 5px solid #efeded;
-            position: absolute;
+            /* position: absolute; */
             left: 50px;
             border-radius: 10%;
         }
 
-        div {
-            width: 600px;
+        .info {
             height: fit-content + 200px;
             padding-right: 50px;
             padding-left: 50px;
             background-position-x: 70%;
             background-color: rgb(115, 120, 112);
             border-radius: 5px;
-            position: absolute;
-            left: 400px;
+
+        }
+
+        #pictures {
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+            justify-content: space-around;
+        }
+
+        @media (max-width: 600px) {
+            #layout {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /* only layout for larger than 800px screens */
+        @media (min-width: 800px) {
+            #layout {
+                display: flex;
+                flex-direction: row;
+            }
         }
     </style>
 </head>
 
 
 <body>
+    <div id="layout">
+        <div id="pictures">
+            <img src="https://planetary.s3.amazonaws.com/web/assets/pictures/20140910_eso1241e.jpg"
+                alt="Alpha Centauri Itself" />
 
-    <div style="top: 20px">
+            <img src="https://magarticles.magzter.com/articles/15256/468620/5eeb02e5c604d/DESTINATION-ALPHA-CENTAURI.jpeg"
+                alt="An artist's impression of the binary system" />
 
-        <h1 class="important" style="text-align:center">
-            Alpha Centauri is the closest star to us! It is around 4 light years away
-        </h1>
-        <h2 class="semiImportant" style="text-align:center">
-            Sebastian Baxter
-        </h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Alpha_Centauri_relative_sizes.svg/2880px-Alpha_Centauri_relative_sizes.svg.png"
+                alt="A size comparison of the Stars" />
 
-        <p></p>
+            <img src=" https://db4sgowjqfwig.cloudfront.net/campaigns/112725/assets/445605/The_Alpha_Centauri_System_POSTER.jpg?1428369072"
+                alt="A potential, though not scientifically grounded, characterization of Alpha Centauri's planets" />
 
-        <p>
-            If you would like to leave the disco party press the link here: <a href="index.html">Home</a>
-        </p>
+            <img src="https://www.constellation-guide.com/wp-content/uploads/2014/07/Alpha-Centauri-location.png"
+                alt="Location of the star alpha centauri" />
+
+            <img src="https://www.jlbphotos.com/wp-content/uploads/2016/10/JLB-photos-Gallery-1010.jpg"
+                alt="Stars over Uluru in Australia" />
+        </div>
+        <div id="text">
+
+
+            <div class="info">
+
+                <h1 class="important" style="text-align:center">
+                    Alpha Centauri is the closest star to us! It is around 4 light years away
+                </h1>
+                <h2 class="semiImportant" style="text-align:center">
+                    Sebastian Baxter
+                </h2>
+
+                <p></p>
+
+                <p>
+                    If you would like to leave the disco party press the link here: <a href="index.html">Home</a>
+                </p>
+
+            </div>
+
+            <div class="info">
+                <h1 class="important"> Basic Information </h1>
+                <p>
+                    <i>Alpha Centauri</i> (α Centauri, α Cen, or Alpha Cen) is a triple star system in the southern
+                    constellation of
+                    Centaurus. It consists of three stars: Rigil Kentaurus (α Centauri A), Toliman (α Centauri B), and
+                    Proxima
+                    Centauri (α Centauri C). Proxima Centauri is the closest star to the Sun at 4.2465 light-years
+                    (1.3020
+                    pc).
+                </p>
+                <p>
+                    α Centauri A and B are Sun-like stars (class G and K, respectively) that together form the binary
+                    star
+                    system α Centauri AB. To the naked eye, these two main components appear to be a single star with an
+                    apparent magnitude of −0.27 . It is the brightest star in the constellation and the third-brightest
+                    in the
+                    night sky, outshone by only Sirius and Canopus.
+                </p>
+                <p>
+                    α Centauri C, or more commonly, Proxima Centauri, is a small faint red dwarf (class M). Though not
+                    visible
+                    to the naked eye, Proxima Centauri is the closest star to the Sun at a distance of 4.24 ly (1.30
+                    pc),
+                    slightly closer than α Centauri AB. Currently, the distance between Proxima Centauri and α Centauri
+                    AB is
+                    about 13,000 AU (0.21 ly), equivalent to about 430 times the radius of Neptune's orbit.
+                </p>
+                <p>
+                    Proxima Centauri has two confirmed planets: Proxima b or α Centauri Cb, an Earth-sized planet in the
+                    habitable zone discovered in 2016, and Proxima d (α Centauri Cd), a candidate sub-Earth which orbits
+                    very
+                    closely to the star, announced in 2022. The existence of Proxima c (α Centauri Cc), a mini-Neptune
+                    1.5
+                    AU away discovered in 2019, is controversial. α Centauri A may have a Neptune-sized planet in the
+                    habitable zone, though it is not yet known with certainty to be planetary in nature and could be an
+                    artifact
+                    of the discovery mechanism. α Centauri B has no known planets: Planet α Cen Bb, purportedly
+                    discovered
+                    in 2012, was later disproven, and no other planet has yet been confirmed.
+                </p>
+
+                <p>
+                    This star is Cool because:
+                </p>
+                <ul>
+                    <li>It is a binary system</li>
+                    <li>It is close by</li>
+                    <li>It could have habitable planets</li>
+                    <li>It can be seen easily with the naked eye</li>
+                </ul>
+            </div>
+
+            <div class="info">
+
+                <h1 class="important">Potential Planets!</h1>
+
+                <p>
+                    The Alpha Centauri system as a whole has two confirmed planets, both of them around Proxima
+                    Centauri. While
+                    other planets have been claimed to exist around all of the stars, none of the discoveries have been
+                    confirmed.
+                </p>
+
+                <h2 class="semiImportant">Planets of Proxima Centauri</h2>
+                <p>
+                    Main articles: Proxima Centauri b, Proxima Centauri c, and Proxima Centauri d
+                    See also: Proxima Centauri § Planetary system
+                    Proxima Centauri b is a terrestrial planet discovered in 2016 by astronomers at the European
+                    Southern
+                    Observatory (ESO). It has an estimated minimum mass of 1.17 ME (Earth masses) and orbits
+                    approximately 0.049
+                    AU from Proxima Centauri, placing it in the star's habitable zone.
+                </p>
+                <p>
+                    The discovery of Proxima Centauri c was formally published in 2020 and could be a super-Earth or
+                    mini-Neptune. It has a mass of roughly 7 ME and orbits about 1.49 AU from Proxima Centauri with a
+                    period of 1,928 days (5.28 yr). In June 2020, a possible direct imaging detection of the planet
+                    hinted
+                    at the presence of a large ring system. However, a 2022 study disputed the existence of this
+                    planet.
+                </p>
+                <p>
+                    A 2020 paper refining Proxima b's mass excludes the presence of extra companions with masses above
+                    0.6 ME at
+                    periods shorter than 50 days, but the authors detected a radial-velocity curve with a periodicity of
+                    5.15
+                    days, suggesting the presence of a planet with a mass of about 0.29 ME. This planet, Proxima
+                    Centauri
+                    d, was confirmed in 2022.
+                </p>
+                <p>
+
+                    In 2021, a candidate planet named Candidate 1 (abbreviated as C1) was detected around Alpha Centauri
+                    A,
+                    thought to orbit at approximately 1.1 AU with a period of about one year, and to have a mass between
+                    that of
+                    Neptune and one-half that of Saturn, though it may be a dust disk or an artifact. The possibility of
+                    C1
+                    being a background star has been ruled out. If this candidate is confirmed, the temporary name C1
+                    will most likely be replaced with the scientific designation Alpha Centauri Ab in accordance with
+                    current
+                    naming conventions.
+                </p>
+                <p>
+                    GO Cycle 1 observations are planned for the James Webb Space Telescope (JWST) to search for planets
+                    around
+                    Alpha Centauri A, as well as observations of Epsilon Muscae. The coronographic observations, which
+                    occurred on July 26 and 27, 2023, were failures, though there are follow-up observations in March
+                    2024.
+                    Pre-launch estimates predicted that JWST will be able to find planets with a radius of 5 R🜨 at 1–3
+                    AU.
+                    Multiple observations every 3–6 months could push the limit down to 3 R🜨. Post-processing
+                    techniques
+                    could push the limit down to 0.5–0.7 R🜨. Post-launch estimates based on observations of HIP 65426 b
+                    find that JWST will be able to find planets even closer to Alpha Centauri A and could find a 5 R🜨
+                    planet at
+                    0.5–2.5 AU. Candidate 1 has an estimated radius between 3.3–11 R🜨 and orbits at 1.1 AU. It is
+                    therefore likely within the reach of JWST observations.
+                </p>
+                <p>
+                    The first claim of a planet around Alpha Centauri B was that of Alpha Centauri Bb in 2012, which was
+                    proposed to be an Earth-mass planet in a 3.2-day orbit. This was refuted in 2015 when the apparent
+                    planet was shown to be an artifact of the way the radial velocity data was processed.
+                </p>
+                <p>
+                    A search for transits of planet Bb was conducted with the Hubble Space Telescope from 2013 to 2014.
+                    This
+                    search detected one potential transit-like event, which could be associated with a different planet
+                    with a
+                    radius around 0.92 R🜨. This planet would most likely orbit Alpha Centauri B with an orbital period
+                    of 20.4
+                    days or less, with only a 5% chance of it having a longer orbit. The median of the likely orbits is
+                    12.4
+                    days. Its orbit would likely have an eccentricity of 0.24 or less. It could have lakes of molten
+                    lava
+                    and would be far too close to Alpha Centauri B to harbour life. If confirmed, this planet might be
+                    called Alpha Centauri Bc. However, the name has not been used in the literature, as it is not a
+                    claimed
+                    discovery.
+                </p>
+
+                <h2 class="semiImportant">Hypothetical planets</h2>
+                <p>
+                    Additional planets may exist in the Alpha Centauri system, either orbiting Alpha Centauri A or Alpha
+                    Centauri B individually, or in large orbits around Alpha Centauri AB. Because both stars are fairly
+                    similar
+                    to the Sun (for example, in age and metallicity), astronomers have been especially interested in
+                    making
+                    detailed searches for planets in the Alpha Centauri system. Several established planet-hunting teams
+                    have
+                    used various radial velocity or star transit methods in their searches around these two bright
+                    stars.
+                    All the observational studies have so far failed to find evidence for brown dwarfs or gas giants.
+                </p>
+                <p>
+                    In 2009, computer simulations showed that a planet might have been able to form near the inner edge
+                    of Alpha
+                    Centauri B's habitable zone, which extends from 0.5–0.9 AU from the star. Certain special
+                    assumptions, such
+                    as considering that the Alpha Centauri pair may have initially formed with a wider separation and
+                    later
+                    moved closer to each other (as might be possible if they formed in a dense star cluster), would
+                    permit an
+                    accretion-friendly environment farther from the star. Bodies around Alpha Centauri A would be able
+                    to
+                    orbit at slightly farther distances due to its stronger gravity. In addition, the lack of any brown
+                    dwarfs
+                    or gas giants in close orbits around Alpha Centauri make the likelihood of terrestrial planets
+                    greater than
+                    otherwise. A theoretical study indicates that a radial velocity analysis might detect a hypothetical
+                    planet of 1.8 ME in Alpha Centauri B's habitable zone.
+                </p>
+                <p>
+                    Radial velocity measurements of Alpha Centauri B made with the High Accuracy Radial Velocity Planet
+                    Searcher
+                    spectrograph were sufficiently sensitive to detect a 4 ME planet within the habitable zone of the
+                    star (i.e.
+                    with an orbital period P = 200 days), but no planets were detected.
+                </p>
+                <p>
+                    Current estimates place the probability of finding an Earth-like planet around Alpha Centauri at
+                    roughly
+                    75%. The observational thresholds for planet detection in the habitable zones by the radial velocity
+                    method are currently (2017) estimated to be about 50 ME for Alpha Centauri A, 8 ME for Alpha
+                    Centauri B, and
+                    0.5 ME for Proxima Centauri.
+                </p>
+                <p>
+                    Early computer-generated models of planetary formation predicted the existence of terrestrial
+                    planets around
+                    both Alpha Centauri A and B, but most recent numerical investigations have shown that the
+                    gravitational pull of the companion star renders the accretion of planets difficult. Despite these
+                    difficulties, given the similarities to the Sun in spectral types, star type, age and probable
+                    stability of
+                    the orbits, it has been suggested that this stellar system could hold one of the best possibilities
+                    for
+                    harbouring extraterrestrial life on a potential planet.
+                </p>
+                <p>
+                    In the Solar System, it was once thought that Jupiter and Saturn were probably crucial in perturbing
+                    comets
+                    into the inner Solar System, providing the inner planets with a source of water and various other
+                    ices.
+                    However, since isotope measurements of the deuterium to hydrogen (D/H) ratio in comets Halley,
+                    Hyakutake,
+                    Hale–Bopp, 2002T7, and Tuttle yield values approximately twice that of Earth's oceanic water, more
+                    recent
+                    models and research predict that less than 10% of Earth's water was supplied from comets. In the α
+                    Centauri
+                    system, Proxima Centauri may have influenced the planetary disk as the α Centauri system was
+                    forming,
+                    enriching the area around Alpha Centauri with volatile materials. This would be discounted if, for
+                    example, α Centauri B happened to have gas giants orbiting α Centauri A (or vice versa), or if α
+                    Centauri A
+                    and B themselves were able to perturb comets into each other's inner systems, as Jupiter and Saturn
+                    presumably have done in the Solar System. Such icy bodies probably also reside in Oort clouds of
+                    other
+                    planetary systems. When they are influenced gravitationally by either the gas giants or disruptions
+                    by
+                    passing nearby stars, many of these icy bodies then travel star-wards. Such ideas also apply to the
+                    close approach of Alpha Centauri or other stars to the Solar system, when, in the distant future,
+                    the Oort
+                    Cloud might be disrupted enough to increase the number of active comets.
+                </p>
+                <p>
+                    To be in the habitable zone, a planet around Alpha Centauri A would have an orbital radius of
+                    between about
+                    1.2 and 2.1 AU so as to have similar planetary temperatures and conditions for liquid water to
+                    exist.
+                    For the slightly less luminous and cooler α Centauri B, the habitable zone is between about 0.7 and
+                    1.2
+                    AU.
+                </p>
+                <p>
+                    With the goal of finding evidence of such planets, both Proxima Centauri and α Centauri AB were
+                    among the
+                    listed "Tier-1" target stars for NASA's Space Interferometry Mission (S.I.M.). Detecting planets as
+                    small as
+                    three Earth-masses or smaller within two AU of a "Tier-1" target would have been possible with this
+                    new
+                    instrument. The S.I.M. mission, however, was cancelled due to financial issues in 2010.
+                </p>
+            </div>
+
+            <div class="info">
+                <h1 class="important"> Finding Alpha Centauri</h1>
+                <ol>
+                    <li>Probably best to go to the Southern Hemisphere</li>
+                    <li>Find the constelation Centaurus</li>
+                    <li>Follow the front lef of Centaurus to it's end</li>
+                    <li>Find the brightest star there</li>
+                    <li>That is Alpha Centauri</li>
+                    <li>Have a party</li>
+                    <li>Find meaning in life</li>
+                    <li>Visit Alpha Centauri</li>
+                </ol>
+            </div>
+
+
+
+        </div>
+
+
+
 
     </div>
-
-    <div style="top: 300px">
-        <h1 class="important"> Basic Information </h1>
-        <p>
-            <i>Alpha Centauri</i> (α Centauri, α Cen, or Alpha Cen) is a triple star system in the southern
-            constellation of
-            Centaurus. It consists of three stars: Rigil Kentaurus (α Centauri A), Toliman (α Centauri B), and Proxima
-            Centauri (α Centauri C). Proxima Centauri is the closest star to the Sun at 4.2465 light-years (1.3020
-            pc).
-        </p>
-        <p>
-            α Centauri A and B are Sun-like stars (class G and K, respectively) that together form the binary star
-            system α Centauri AB. To the naked eye, these two main components appear to be a single star with an
-            apparent magnitude of −0.27 . It is the brightest star in the constellation and the third-brightest in the
-            night sky, outshone by only Sirius and Canopus.
-        </p>
-        <p>
-            α Centauri A (Rigil Kentaurus) has 1.1 times the mass and 1.5 times the luminosity of the Sun, while α
-            Centauri B (Toliman) is smaller and cooler, at 0.9 solar mass and less than 0.5 solar luminosity. The
-            pair orbit around a common centre with an orbital period of 79 years. Their elliptical orbit is
-            eccentric, so that the distance between A and B varies from 35.6 astronomical units (AU), or about the
-            distance between Pluto and the Sun, to 11.2 AU, or about the distance between Saturn and the Sun.
-        </p>
-        <p>
-            α Centauri C, or more commonly, Proxima Centauri, is a small faint red dwarf (class M). Though not visible
-            to the naked eye, Proxima Centauri is the closest star to the Sun at a distance of 4.24 ly (1.30 pc),
-            slightly closer than α Centauri AB. Currently, the distance between Proxima Centauri and α Centauri AB is
-            about 13,000 AU (0.21 ly), equivalent to about 430 times the radius of Neptune's orbit.
-        </p>
-        <p>
-            Proxima Centauri has two confirmed planets: Proxima b or α Centauri Cb, an Earth-sized planet in the
-            habitable zone discovered in 2016, and Proxima d (α Centauri Cd), a candidate sub-Earth which orbits very
-            closely to the star, announced in 2022. The existence of Proxima c (α Centauri Cc), a mini-Neptune 1.5
-            AU away discovered in 2019, is controversial. α Centauri A may have a Neptune-sized planet in the
-            habitable zone, though it is not yet known with certainty to be planetary in nature and could be an artifact
-            of the discovery mechanism. α Centauri B has no known planets: Planet α Cen Bb, purportedly discovered
-            in 2012, was later disproven, and no other planet has yet been confirmed.
-        </p>
-
-        <p>
-            This star is Cool because:
-        </p>
-        <ul>
-            <li>It is a binary system</li>
-            <li>It is close by</li>
-            <li>It could have habitable planets</li>
-            <li>It can be seen easily with the naked eye</li>
-        </ul>
-    </div>
-
-    <div style="top: 1100px">
-
-        <h1  class="important" >Potential Planets!</h1>
-
-        <p>
-            The Alpha Centauri system as a whole has two confirmed planets, both of them around Proxima Centauri. While
-            other planets have been claimed to exist around all of the stars, none of the discoveries have been
-            confirmed.
-        </p>
-
-        <h2 class="semiImportant">Planets of Proxima Centauri</h2>
-        <p>
-            Main articles: Proxima Centauri b, Proxima Centauri c, and Proxima Centauri d
-            See also: Proxima Centauri § Planetary system
-            Proxima Centauri b is a terrestrial planet discovered in 2016 by astronomers at the European Southern
-            Observatory (ESO). It has an estimated minimum mass of 1.17 ME (Earth masses) and orbits approximately 0.049
-            AU from Proxima Centauri, placing it in the star's habitable zone.
-        </p>
-        <p>
-            The discovery of Proxima Centauri c was formally published in 2020 and could be a super-Earth or
-            mini-Neptune. It has a mass of roughly 7 ME and orbits about 1.49 AU from Proxima Centauri with a
-            period of 1,928 days (5.28 yr). In June 2020, a possible direct imaging detection of the planet hinted
-            at the presence of a large ring system. However, a 2022 study disputed the existence of this
-            planet.
-        </p>
-        <p>
-            A 2020 paper refining Proxima b's mass excludes the presence of extra companions with masses above 0.6 ME at
-            periods shorter than 50 days, but the authors detected a radial-velocity curve with a periodicity of 5.15
-            days, suggesting the presence of a planet with a mass of about 0.29 ME. This planet, Proxima Centauri
-            d, was confirmed in 2022.
-        </p>
-        <p>
-
-            In 2021, a candidate planet named Candidate 1 (abbreviated as C1) was detected around Alpha Centauri A,
-            thought to orbit at approximately 1.1 AU with a period of about one year, and to have a mass between that of
-            Neptune and one-half that of Saturn, though it may be a dust disk or an artifact. The possibility of C1
-            being a background star has been ruled out. If this candidate is confirmed, the temporary name C1
-            will most likely be replaced with the scientific designation Alpha Centauri Ab in accordance with current
-            naming conventions.
-        </p>
-        <p>
-            GO Cycle 1 observations are planned for the James Webb Space Telescope (JWST) to search for planets around
-            Alpha Centauri A, as well as observations of Epsilon Muscae. The coronographic observations, which
-            occurred on July 26 and 27, 2023, were failures, though there are follow-up observations in March 2024.
-            Pre-launch estimates predicted that JWST will be able to find planets with a radius of 5 R🜨 at 1–3 AU.
-            Multiple observations every 3–6 months could push the limit down to 3 R🜨. Post-processing techniques
-            could push the limit down to 0.5–0.7 R🜨. Post-launch estimates based on observations of HIP 65426 b
-            find that JWST will be able to find planets even closer to Alpha Centauri A and could find a 5 R🜨 planet at
-            0.5–2.5 AU. Candidate 1 has an estimated radius between 3.3–11 R🜨 and orbits at 1.1 AU. It is
-            therefore likely within the reach of JWST observations.
-        </p>
-        <p>
-            The first claim of a planet around Alpha Centauri B was that of Alpha Centauri Bb in 2012, which was
-            proposed to be an Earth-mass planet in a 3.2-day orbit. This was refuted in 2015 when the apparent
-            planet was shown to be an artifact of the way the radial velocity data was processed.
-        </p>
-        <p>
-            A search for transits of planet Bb was conducted with the Hubble Space Telescope from 2013 to 2014. This
-            search detected one potential transit-like event, which could be associated with a different planet with a
-            radius around 0.92 R🜨. This planet would most likely orbit Alpha Centauri B with an orbital period of 20.4
-            days or less, with only a 5% chance of it having a longer orbit. The median of the likely orbits is 12.4
-            days. Its orbit would likely have an eccentricity of 0.24 or less. It could have lakes of molten lava
-            and would be far too close to Alpha Centauri B to harbour life. If confirmed, this planet might be
-            called Alpha Centauri Bc. However, the name has not been used in the literature, as it is not a claimed
-            discovery.
-        </p>
-
-        <h2 class="semiImportant">Hypothetical planets</h2>
-        <p>
-            Additional planets may exist in the Alpha Centauri system, either orbiting Alpha Centauri A or Alpha
-            Centauri B individually, or in large orbits around Alpha Centauri AB. Because both stars are fairly similar
-            to the Sun (for example, in age and metallicity), astronomers have been especially interested in making
-            detailed searches for planets in the Alpha Centauri system. Several established planet-hunting teams have
-            used various radial velocity or star transit methods in their searches around these two bright stars.
-            All the observational studies have so far failed to find evidence for brown dwarfs or gas giants.
-        </p>
-        <p>
-            In 2009, computer simulations showed that a planet might have been able to form near the inner edge of Alpha
-            Centauri B's habitable zone, which extends from 0.5–0.9 AU from the star. Certain special assumptions, such
-            as considering that the Alpha Centauri pair may have initially formed with a wider separation and later
-            moved closer to each other (as might be possible if they formed in a dense star cluster), would permit an
-            accretion-friendly environment farther from the star. Bodies around Alpha Centauri A would be able to
-            orbit at slightly farther distances due to its stronger gravity. In addition, the lack of any brown dwarfs
-            or gas giants in close orbits around Alpha Centauri make the likelihood of terrestrial planets greater than
-            otherwise. A theoretical study indicates that a radial velocity analysis might detect a hypothetical
-            planet of 1.8 ME in Alpha Centauri B's habitable zone.
-        </p>
-        <p>
-            Radial velocity measurements of Alpha Centauri B made with the High Accuracy Radial Velocity Planet Searcher
-            spectrograph were sufficiently sensitive to detect a 4 ME planet within the habitable zone of the star (i.e.
-            with an orbital period P = 200 days), but no planets were detected.
-        </p>
-        <p>
-            Current estimates place the probability of finding an Earth-like planet around Alpha Centauri at roughly
-            75%. The observational thresholds for planet detection in the habitable zones by the radial velocity
-            method are currently (2017) estimated to be about 50 ME for Alpha Centauri A, 8 ME for Alpha Centauri B, and
-            0.5 ME for Proxima Centauri.
-        </p>
-        <p>
-            Early computer-generated models of planetary formation predicted the existence of terrestrial planets around
-            both Alpha Centauri A and B, but most recent numerical investigations have shown that the
-            gravitational pull of the companion star renders the accretion of planets difficult. Despite these
-            difficulties, given the similarities to the Sun in spectral types, star type, age and probable stability of
-            the orbits, it has been suggested that this stellar system could hold one of the best possibilities for
-            harbouring extraterrestrial life on a potential planet.
-        </p>
-        <p>
-            In the Solar System, it was once thought that Jupiter and Saturn were probably crucial in perturbing comets
-            into the inner Solar System, providing the inner planets with a source of water and various other ices.
-            However, since isotope measurements of the deuterium to hydrogen (D/H) ratio in comets Halley, Hyakutake,
-            Hale–Bopp, 2002T7, and Tuttle yield values approximately twice that of Earth's oceanic water, more recent
-            models and research predict that less than 10% of Earth's water was supplied from comets. In the α Centauri
-            system, Proxima Centauri may have influenced the planetary disk as the α Centauri system was forming,
-            enriching the area around Alpha Centauri with volatile materials. This would be discounted if, for
-            example, α Centauri B happened to have gas giants orbiting α Centauri A (or vice versa), or if α Centauri A
-            and B themselves were able to perturb comets into each other's inner systems, as Jupiter and Saturn
-            presumably have done in the Solar System. Such icy bodies probably also reside in Oort clouds of other
-            planetary systems. When they are influenced gravitationally by either the gas giants or disruptions by
-            passing nearby stars, many of these icy bodies then travel star-wards. Such ideas also apply to the
-            close approach of Alpha Centauri or other stars to the Solar system, when, in the distant future, the Oort
-            Cloud might be disrupted enough to increase the number of active comets.
-        </p>
-        <p>
-            To be in the habitable zone, a planet around Alpha Centauri A would have an orbital radius of between about
-            1.2 and 2.1 AU so as to have similar planetary temperatures and conditions for liquid water to exist.
-            For the slightly less luminous and cooler α Centauri B, the habitable zone is between about 0.7 and 1.2
-            AU.
-        </p>
-        <p>
-            With the goal of finding evidence of such planets, both Proxima Centauri and α Centauri AB were among the
-            listed "Tier-1" target stars for NASA's Space Interferometry Mission (S.I.M.). Detecting planets as small as
-            three Earth-masses or smaller within two AU of a "Tier-1" target would have been possible with this new
-            instrument. The S.I.M. mission, however, was cancelled due to financial issues in 2010.
-        </p>
-    </div>
-
-    <div style="top: 3500px">
-        <h1 class="important"> Finding Alpha Centauri</h1>
-        <ol>
-            <li>Probably best to go to the Southern Hemisphere</li>
-            <li>Find the constelation Centaurus</li>
-            <li>Follow the front lef of Centaurus to it's end</li>
-            <li>Find the brightest star there</li>
-            <li>That is Alpha Centauri</li>
-            <li>Have a party</li>
-            <li>Find meaning in life</li>
-            <li>Visit Alpha Centauri</li>
-        </ol>
-    </div>
-
-
-
-
-    <img style="top: 50px" src="https://planetary.s3.amazonaws.com/web/assets/pictures/20140910_eso1241e.jpg"
-    alt="Alpha Centauri Itself" />
-
-    <img style="top: 400px" src="https://magarticles.magzter.com/articles/15256/468620/5eeb02e5c604d/DESTINATION-ALPHA-CENTAURI.jpeg"
-    alt="An artist's impression of the binary system" />
-
-    <img style="top: 900px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Alpha_Centauri_relative_sizes.svg/2880px-Alpha_Centauri_relative_sizes.svg.png"
-    alt="A size comparison of the Stars" />
-
-    <img style="top: 1500px" src=" https://db4sgowjqfwig.cloudfront.net/campaigns/112725/assets/445605/The_Alpha_Centauri_System_POSTER.jpg?1428369072"
-    alt="A potential, though not scientifically grounded, characterization of Alpha Centauri's planets" />
-
-    <img style="top: 3000px" src="https://www.constellation-guide.com/wp-content/uploads/2014/07/Alpha-Centauri-location.png"
-        alt="Location of the star alpha centauri" />
-
-    <img style="top: 3500px" src="https://www.jlbphotos.com/wp-content/uploads/2016/10/JLB-photos-Gallery-1010.jpg"
-        alt="Stars over Uluru in Australia" />
-
-
-        
-
-        
-
 
 </body>
 
