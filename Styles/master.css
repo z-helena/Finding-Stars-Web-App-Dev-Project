@@ -1,0 +1,17 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+a {
+    font-style: normal;
+    background-color: #f4511e;
+    margin: 4px 2px;
+    rotate: 0deg;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: blueviolet;
+    rotate: 10deg;
+    font-style: italic;
+}

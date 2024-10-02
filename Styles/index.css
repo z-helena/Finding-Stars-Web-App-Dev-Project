@@ -1,0 +1,12 @@
+#spaceEqually {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 100px;
+}
+
+@media (max-width: 800px) {
+    #spaceEqually {
+      flex-direction: column;
+    }
+  }
