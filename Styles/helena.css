@@ -1,0 +1,32 @@
+li:first-child {
+    color: rgb(173, 155, 203);
+}
+
+p {
+    margin: 1.5vh 0;
+    padding: 0;
+}
+
+h1 {
+   text-align: center;
+}
+
+h5 {
+    text-align: center;
+ }
+
+.italicize {
+    font-style: italic;
+}
+
+body {
+    font-family: "Nunito", Geneva;
+    background-color: rgb(225, 241, 249);
+
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+img {
+    border-radius: 8%;
+}
