@@ -1,0 +1,74 @@
+<head>
+    <title>JSPage</title>
+    <meta charset="utf-8" />
+    <script src="../JavaScript/Sebastian-Baxter-JavaScript.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: rgb(224, 189, 34);
+            animation-name: colorChange;
+            animation-duration: 4s;
+            animation-delay: -2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        #bottomText {
+            align-self: flex-end;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div {
+            height: fit-content + 300px;
+            padding-right: 50px;
+            padding-left: 50px;
+            background-position-x: 80%;
+            background-color: rgb(88, 190, 24);
+            border-radius: 10px;
+        }
+
+        button {
+            
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: rgb(190, 24, 160);
+            border-radius: 10px;
+            border-color: blueviolet;
+            font-size: large;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: rgb(224, 189, 34);
+
+            }
+
+            50% {
+                background-color: blue;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to the Website</h1>
+        <p></p>
+        <h4>Click the buttons below to see what happens!</h4>
+    </div>
+
+    <button id="bottomTextButton" type="button">Perhaps make a p element appear!</button>
+    <button type="button">perhaps make an h4 element text slightly larger...</button>
+
+    <div id="bottomText">
+        <p>You Pressed A button</p>
+    </div>
+</body>
