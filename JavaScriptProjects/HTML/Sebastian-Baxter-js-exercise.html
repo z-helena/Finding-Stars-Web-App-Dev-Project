@@ -1,0 +1,119 @@
+<head>
+    <title>JSPage</title>
+    <meta charset="utf-8" />
+    <script src="../JavaScript/Sebastian-Baxter-JavaScript.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: rgb(224, 189, 34);
+            animation-name: colorChange;
+            animation-duration: 4s;
+            animation-delay: -2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        #horizontalButtons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            color: rgb(190, 104, 24)
+        }
+
+        #bottomText {
+            position: fixed;
+            bottom: 50;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div {
+            height: fit-content + 300px;
+            padding-right: 50px;
+            padding-left: 50px;
+            background-position-x: 80%;
+            background-color: rgb(88, 190, 24);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(190, 24, 160);
+            border-radius: 10px;
+            border-color: blueviolet;
+            font-size: large;
+            
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: rgb(224, 189, 34);
+            }
+
+            50% {
+                background-color: blue;
+            }
+        }
+
+        @keyframes rainbow {
+            0% {
+                color: red;
+            }
+            20% {
+                color: orange;
+            }
+            40% {
+                color: yellow;
+            }
+            60% {
+                color: green;
+            }
+            80% {
+                olor: blue;
+            }
+            100% {
+                color: violet;
+            }
+        }
+
+        p{
+            font-size: larger;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to the Website</h1>
+        <p></p>
+        <h4 id="h4Text">Click the buttons below to see what happens!</h4>
+    </div>
+
+    <button id="bottomTextButton" type="button">Perhaps make a p element appear!</button>
+    <button id="h4TextButton" type="button">perhaps make an h4 element text slightly larger...</button>
+
+    <div>
+        <p id="colorP">
+            Experimenting with Color!
+        </p>
+    </div>
+
+    <div id="horizontalButtons">
+        <button id="aquamarineButton" type="button">Aquamarine</button>
+        <button id="flamingoButton" type="button">Flamingo</button>
+        <button id="rainbowButton" type="button">Rainbow</button>
+    </div>
+
+    <div id="bottomText">
+        <p>You Pressed A button</p>
+    </div>
+</body>
