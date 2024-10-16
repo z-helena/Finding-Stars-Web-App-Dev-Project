@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="charlieJS.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Londrina+Sketch&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+        <style>
+            button {
+                height: 50px;
+                width: 50px;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            h4 {
+                margin-bottom: 0;
+            }
+
+            div, form {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            form {
+                margin-top: 3em;
+            }
+
+            .color-btns {
+                flex-direction: row !important;
+            }
+
+            input {
+                margin-bottom: 2em;
+            }
+        </style>
+	</head>
+	<body>
+		<button id="p-btn">Press This</button>
+        <div>
+            <button id="count-btn">+1</button>
+            <h4 id="count"">0</h4>
+        </div>
+		<div>
+			<p id="p-colors">experiment with color</p>
+            <div class="color-btns">
+                <button id="red">red</button>
+                <button id="blue">blue</button>
+                <button id="green">green</button>
+            </div>		
+		</div>
+        <form onsubmit="return false">
+            <input id="text-box" type="text" >
+            <button id="submit-btn">mirror</button>
+            <p id="mirror-p"></p>
+        </form>
+        <div>
+            <p id="fonts" style:"font-family: Sixtyfour Convergence">Experiment with fonts</p>
+            <select id="fonts-select">
+                <option value="Sixtyfour Convergence">font1</option>
+                <option value="Edu AU VIC WA NT Guides">font2</option>
+                <option value="Londrina Sketch">font3</option>
+              </select>
+        </div>
+        
+	</body>
+</html>

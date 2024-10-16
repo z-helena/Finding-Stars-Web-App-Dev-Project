@@ -113,11 +113,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     left: 93vw;
 }
 
 a > p {
-    position: absolute;
+    position: fixed;
     top: 4em;
+}
+
+.planet-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
