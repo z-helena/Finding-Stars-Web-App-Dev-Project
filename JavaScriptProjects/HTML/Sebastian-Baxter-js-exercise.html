@@ -2,8 +2,10 @@
     <title>JSPage</title>
     <meta charset="utf-8" />
     <script src="../JavaScript/Sebastian-Baxter-JavaScript.js" defer></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Ruge+Boogie&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
     <style>
+
+        /* Lots of styles and things */
         body {
             display: flex;
             flex-direction: column;
@@ -14,6 +16,7 @@
             animation-duration: 4s;
             animation-delay: -2s;
             animation-iteration-count: infinite;
+            font-family: Times, Helvetica, verdana;
 
         }
 
@@ -54,6 +57,22 @@
             
         }
 
+        p{
+            font-size: larger;
+        }
+
+        input{
+            background-color: lightblue;
+            border-radius: 19%;
+            border-style: dashed;
+        }
+
+        select{
+            background-color: rgb(160, 16, 74);
+            border-radius: 19%;
+            border-width: 9px;
+        }
+
         @keyframes colorChange {
             0% {
                 background-color: rgb(224, 189, 34);
@@ -85,9 +104,6 @@
             }
         }
 
-        p{
-            font-size: larger;
-        }
     </style>
 
 </head>
@@ -100,8 +116,10 @@
         <h4 id="h4Text">0</h4>
     </div>
 
+    <!-- Top three buttons -->
     <button id="bottomTextButton" type="button">Perhaps make a p element appear!</button>
-    <button id="h4TextButton" type="button">perhaps make an h4 element text slightly larger...</button>
+    <button id="h4TextButton" type="button">perhaps make an h4 element text slightly greater...</button>
+    <button id="h4TextButtonSmall" type="button">or smaller...</button>
 
     <div>
         <p id="colorP">
@@ -109,21 +127,35 @@
         </p>
     </div>
 
+    <!-- Changing color buttons -->
+
     <div id="horizontalButtons">
         <button id="aquamarineButton" type="button">Aquamarine</button>
         <button id="flamingoButton" type="button">Flamingo</button>
         <button id="rainbowButton" type="button">Rainbow</button>
     </div>
 
+
+    <!-- Changing text section -->
+    <div>
+        <p id="changedText">This text is yours, yes you get to choose what goes in here, just type it in the following text box!</p>
+        <label for="yourText">Your Text:</label>
+        <input type="text" id="yourText" name="fname">
+        <br>
+        <button id = "inputTextButton" type="button">Do Magic</button>
+    </div>
+
+<!-- playing with fonts section -->
     <div style="display: flex; flex-direction: column; justify-content: space-evenly; padding-bottom: 20px">
-        <p id="fontSelectP" >Experimenting with fonts!</p>
-        <select id="fontSelect" style="background-color: aqua;">
-            <option value="">Helevtica</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Lobster">Lobster</option>
+        <p id="fontSelectP" style="font-family: 'Ruge Boogie', Times, candara;">Experimenting with fonts!</p>
+        <select id="fontSelect" onchange = "fontChanger()" style="background-color: aqua;">
+            <option value="'Ruge Boogie', Times, candara">Ruge Boogie</option>
+            <option value="'Rock Salt', Helvetica, verdana">Rock Salt</option>
+            <option value="'Sixtyfour Convergence', monospace, Courier">Sixtyfour Convergence</option>
         </select>
     </div>
 
+    <!-- the text to apear at the bottom! -->
     <div id="bottomText">
         <p>You Pressed A button</p>
     </div>
