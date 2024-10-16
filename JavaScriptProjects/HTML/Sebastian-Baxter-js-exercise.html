@@ -25,6 +25,7 @@
         }
 
         #bottomText {
+            background-color: royalblue;
             position: fixed;
             bottom: 50;
             font-family: 'Courier New', Courier, monospace;
@@ -77,7 +78,7 @@
                 color: green;
             }
             80% {
-                olor: blue;
+                color: blue;
             }
             100% {
                 color: violet;
@@ -95,7 +96,8 @@
     <div>
         <h1>Welcome to the Website</h1>
         <p></p>
-        <h4 id="h4Text">Click the buttons below to see what happens!</h4>
+        <h3>Click the buttons below to see what happens!</h3>
+        <h4 id="h4Text">0</h4>
     </div>
 
     <button id="bottomTextButton" type="button">Perhaps make a p element appear!</button>
@@ -111,6 +113,15 @@
         <button id="aquamarineButton" type="button">Aquamarine</button>
         <button id="flamingoButton" type="button">Flamingo</button>
         <button id="rainbowButton" type="button">Rainbow</button>
+    </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: space-evenly; padding-bottom: 20px">
+        <p id="fontSelectP" >Experimenting with fonts!</p>
+        <select id="fontSelect" style="background-color: aqua;">
+            <option value="">Helevtica</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Lobster">Lobster</option>
+        </select>
     </div>
 
     <div id="bottomText">

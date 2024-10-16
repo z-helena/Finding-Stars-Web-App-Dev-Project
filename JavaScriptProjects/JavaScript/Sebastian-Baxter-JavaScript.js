@@ -51,3 +51,11 @@ rainbowButton.addEventListener("click", function(i){
     }
 
 })
+
+let r = document.getElementById(fontSelectP);
+
+
+const fontDropdown = document.getElementById("fontselect");
+fontDropdown.addEventListener("change", function(event){
+  r.style.fontFamily = event.target.value;
+})
