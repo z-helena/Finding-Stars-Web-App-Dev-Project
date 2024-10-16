@@ -83,6 +83,7 @@ inputTextButton.addEventListener("click", function(j){
 
 
 
+
 //Elements for changing the font
 let r = document.getElementById("fontSelectP");
 const fontDropdown = document.getElementById("fontSelect");
